@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>DELMA ~ Activities</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <!--[if lte IE 8]>
+    <script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="assets/css/ie9.css"/><![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="assets/css/ie8.css"/><![endif]-->
+    <style>
+        .generalContent .logo {
+            border: 0;
+            display: inline-block;
+            font-size: 0.8em;
+            height: inherit;
+            line-height: inherit;
+            padding: 0 1.5em;
+        }
+
+        .generalContent .logo strong {
+            -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+            -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+            -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+            transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+            background-color: #ffffff;
+            color: #242943;
+            display: inline-block;
+            height: 24px;
+            line-height: 24px;
+            margin-right: 0.325em;
+            padding: 0 0.375em 0 0.375em;
+        }
+
+        .generalContent .logo:hover strong {
+            cursor: pointer;
+            background-color: #9bf1ff;
+        }
+
+        #generalContent {
+            box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15);
+            cursor: default;
+            font-weight: 600;
+            line-height: 3.25em;
+        }
+
+        .image.main {
+            display: flex;
+        }
+    </style>
+    <script>
+        var currentBox = '';
+        function toggleBox(that) {
+            $('strong').css('background-color', '');
+            $(that).find('strong').css('background-color', "#53e3fb");
+            var box = that.id;
+            if (box === 'dance') {
+                $("#introBox").html("<p>Delma possesses a lot of talented musicians and dancers who participate in cultural programs in and around Delaware. 'DHWANI' is a music troupe formed by members of Delma." +
+                        "<br><br>" +
+                        "<a href='https://www.facebook.com/pages/Nrithya-dance-group/616630941711266' target='_blank'>NRITHYA</a><br>" +
+                        "Nrithya dance group was founded in Delaware in 2012. Formed by a group of like minded people with utmost passion in dancing. Although they are more inclined towards classical and semi classical numbers, some of their performances include energy packed Bollywood numbers. If you are interested in any such events feel free to contact them.</p>");
+            } else if (box === 'football') {
+                $("#introBox").html("<p>New Castle United (NCU) soccer team is predominantly malayalees but anyone with interest in soccer is welcome to join. NCU team participate in soccer tournaments in Philadelphia,Newyork and Baltimore.<br>Schedule : Summer 2-3 days a week, Winter weekends.</p>");
+            } else if (box === 'volley') {
+                $("#introBox").html("<p>Volleyball team plays twice a week in summer. We have active male and female participants for Volleyball friendlies. Our teams participate in local delaware tournaments as well as malayalee volleyball tournaments in Philadelphia, New Jersey and IAAD events.</p>");
+            } else if (box === 'cricket') {
+                $("#introBox").html('<p>Delma Members are active participants of Delaware United Cricket League (Tennis Ball) and Philadelphia Cricket League (Cricket Ball). If you are interested please drop us a mail at <a href="mailto:info@delma.org?Subject=Interested in Cricket&amp;Body=You can contact me at (phone number &amp; email id)">info@delma.org</a></p>');
+            } else if (box === 'cycling') {
+                $("#introBox").html("<p>Our cycling team is dedicated to the positive experiences of cycling. Join our cycling team if you own a street bike(cycle). We also organize group cycling fun events in and around Newark & Newcastle areas.</p>");
+            } else if (box === 'cards') {
+                $("#introBox").html('<p>Friendly card games are played whenever there is an opportunity . Rummy , 28 and 56 are the favorites among participants. If you are interested to join or organize please drop us a mail at <a href="mailto:info@delma.org?Subject=Interested in joining Cheettukali&amp;Body=You can contact me at (phone number &amp; email id)">info@delma.org</a></p>');
+            }
+        }
+    </script>
+</head>
+<body>
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Header -->
+    <header id="header">
+        <a href="index.html" class="logo"><strong>Delma</strong> <span>Home</span></a>
+        <nav>
+            <a href="#menu">Menu</a>
+        </nav>
+    </header>
+
+    <!-- Menu -->
+    <nav id="menu">
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="onam_2014_flyer.html">Upcoming Event</a></li>
+            <li><a href="office_bearers.html">Commitee Members</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="malayalam_class.html">Malayalam Class</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main -->
+    <div id="main" class="alt">
+
+        <!-- One -->
+        <section id="one">
+            <div class="inner">
+                <header class="major">
+                    <h1>Activities Overview</h1>
+                </header>
+                <p>Delaware Malayalees are an active bunch of people. And as you see below there are a lot of activities
+                    for you to join. </p>
+                <span class="generalContent">
+                    <a class="logo" onclick="toggleBox(this)" id="dance"><strong><img style="position: absolute;"
+                                                                                      src="images/music.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dance & Arts</strong></a>
+                </span>
+                <span class="generalContent">
+                    <a class="logo" onclick="toggleBox(this)" id="football"><strong><img style="position: absolute;"
+                                                                                         src="images/football.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Football</strong></a>
+                </span>
+                <span class="generalContent">
+                    <a class="logo" onclick="toggleBox(this)" id="volley"><strong><img style="position: absolute;"
+                                                                                       src="images/volley.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Volleyball</strong></a>
+                </span>
+                <span class="generalContent">
+                    <a class="logo" onclick="toggleBox(this)" id="cricket"><strong><img style="position: absolute;"
+                                                                                        src="images/cricket.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cricket</strong></a>
+                </span>
+                <span class="generalContent">
+                    <a class="logo" onclick="toggleBox(this)" id="cycling"><strong><img style="position: absolute;"
+                                                                                        src="images/cycling.png"
+                                                                                        height="24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cycling</strong></a>
+                </span>
+                <span class="generalContent">
+                    <a class="logo" onclick="toggleBox(this)" id="cards"><strong><img style="position: absolute;"
+                                                                                      src="images/cards.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cheettukali</strong></a>
+                </span>
+                <br><br>
+                <div id="introBox" class="box">
+                    <p>Click tile to see more</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="two">
+            <div class="inner">
+                <header class="major">
+                    <h3>To join or for more information on any of the events send mail to</h3>
+                </header>
+                <ul class="actions">
+                    <li>
+                        <a href="mailto:info@delma.org?Subject=DELMA Activities&Body=I am interested in joining delma activities. You can contact me at (phone number, email id)"
+                           class="button icon alt fa-envelope">info@delma.org</a></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+            <ul class="icons">
+                <li><a href="https://twitter.com/usadelma" class="icon alt fa-twitter"><span
+                        class="label">Twitter</span></a></li>
+                <li><a href="https://www.facebook.com/Delma.DelUSA" class="icon alt fa-facebook"><span class="label">Facebook</span></a>
+                </li>
+                <li><a href="https://plus.google.com/u/0/114549443800028057195/posts"
+                       class="icon alt fa-google-plus"><span class="label">Google Plus</span></a></li>
+                <li><a href="https://www.flickr.com/photos/125633723@N05/sets/" class="icon alt fa-flickr"><span
+                        class="label">Flickr</span></a></li>
+                <li><a href="https://www.youtube.com/" class="icon alt fa-youtube"><span
+                        class="label">Youtube</span></a></li>
+            </ul>
+            <ul class="copyright">
+                <li>&copy; 2014 <a href="https://www.facebook.com/Delma.DelUSA" target="_blank"><b>ഡെൽമ</b></a></li>
+                <li>Design: <a>Sam Wang & Sabarish Chandrasekharan</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<!--[if lte IE 8]>
+<script src="assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
