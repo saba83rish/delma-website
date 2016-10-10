@@ -1,1 +1,1 @@
-Delaware Malayalee Association much popularly known as DELMA is a Non-Profit Organization which works with the goal of unifying Malayalees in and around Delaware.
+Delaware Malayalee Association much popularly known as DELMA is a Non-Profit Organization which works with the goal of unifying Malayalees in and around Delaware. Our goal is to promote <a href="https://en.wikipedia.org/wiki/Malayalam">Malayalam</a> and share the beautiful Kerala cultures to Delaware.
